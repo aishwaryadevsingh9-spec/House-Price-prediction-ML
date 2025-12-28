@@ -30,7 +30,7 @@ final_value = scalar.transform([all_value])
 
 @st.cache_data
 def model_run(X,y):
- model = RandomForestRegressor()
+  model = RandomForestRegressor()
   model.fit(X,y)
   return model
 
@@ -43,6 +43,7 @@ msg = f'''House price is: $ {round(house_price*100000,2)}'''
 st.success(msg)
 
 st.markdown('''**Design and developed by: Aishwarya Dev**''')
+
 
 
 
