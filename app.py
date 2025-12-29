@@ -25,7 +25,7 @@ for i in X:
 # st.write(all_value)
 
 scaler = StandardScaler()
-scaled_X = scaler.fit_transform(X)
+scaler_X = scaler.fit_transform(X)
 final_value = scalar.transform([all_value])
 
 @st.cache_data
@@ -43,6 +43,7 @@ msg = f'''House price is: $ {round(house_price*100000,2)}'''
 st.success(msg)
 
 st.markdown('''**Design and developed by: Aishwarya Dev**''')
+
 
 
 
