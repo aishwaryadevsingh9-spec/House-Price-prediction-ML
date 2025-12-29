@@ -26,7 +26,7 @@ for i in X:
 
 scaler = StandardScaler()
 scaler_X = scaler.fit_transform(X)
-final_value = scalar.transform([all_value])
+final_value = scaler.transform([all_value])
 
 @st.cache_data
 def model_run(X,y):
@@ -43,6 +43,7 @@ msg = f'''House price is: $ {round(house_price*100000,2)}'''
 st.success(msg)
 
 st.markdown('''**Design and developed by: Aishwarya Dev**''')
+
 
 
 
